@@ -53,8 +53,13 @@
     <Compile Include="Migrations\201703190246034_InitialCreate.Designer.cs">
       <DependentUpon>201703190246034_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703201715255_Promocion.cs" />
+    <Compile Include="Migrations\201703201715255_Promocion.Designer.cs">
+      <DependentUpon>201703201715255_Promocion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Modelo\Context.cs" />
+    <Compile Include="Modelo\Promocion.cs" />
     <Compile Include="Modelo\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -65,6 +70,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201703190246034_InitialCreate.resx">
       <DependentUpon>201703190246034_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703201715255_Promocion.resx">
+      <DependentUpon>201703201715255_Promocion.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

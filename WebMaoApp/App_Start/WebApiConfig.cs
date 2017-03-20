@@ -16,8 +16,7 @@ namespace WebMaoApp
             // Configure Web API para usar solo la autenticación de token de portador.
             // Web API configuration and services
             config.Formatters.Remove(config.Formatters.XmlFormatter);
-            // Web API routes
-            config.MapHttpAttributeRoutes();
+            
             //config.SuppressDefaultHostAuthentication();
             config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
 

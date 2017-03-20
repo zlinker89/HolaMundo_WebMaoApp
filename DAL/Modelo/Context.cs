@@ -16,6 +16,7 @@ namespace DAL.Modelo
         }
 
         public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Promocion> Promocion { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
