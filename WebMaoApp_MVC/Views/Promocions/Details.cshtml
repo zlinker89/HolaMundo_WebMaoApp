@@ -1,0 +1,51 @@
+﻿@model DAL.Modelo.Promocion
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/MaoAPP/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Promocion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ImagePromocion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImagePromocion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreImagen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreImagen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mensaje)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mensaje)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PromocionId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

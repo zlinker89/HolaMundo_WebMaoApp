@@ -1,0 +1,52 @@
+﻿@model IEnumerable<DAL.Modelo.Promocion>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/MaoAPP/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        @*<th>
+        @Html.DisplayNameFor(model => model.ImagePromocion)
+    </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.NombreImagen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mensaje)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        @*<td>
+        @Html.DisplayFor(modelItem => item.ImagePromocion)
+    </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreImagen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titulo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mensaje)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PromocionId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PromocionId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PromocionId })
+        </td>
+    </tr>
+}
+
+</table>
